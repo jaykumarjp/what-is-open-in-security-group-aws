@@ -1,5 +1,9 @@
 # what-is-open-in-security-group-aws:
-Here are the main charactisitics 
+Here are the main characteristics:
+*List all security groups in aws account.
+*Find attached instances in that security group.
+*Find public open ports in related security group.
+*Get highlighted list of dangereous open ports to public.
 
 # prerequisite:
 1. python
@@ -9,10 +13,7 @@ Here are the main charactisitics
 
 # usage: 
 Type command in terminal<br>
-``` s3fast.py default > report.html ``` [If aws-cli profile is default else change "default" with profile name]
-
-# False-Positive
-It show "may be public", when prnciple is * but condition set to limited access. 
+``` sgfast.py default output ``` [If aws-cli profile is default else change "default" with profile name]
 
 # Future Update
 1. Remove false-positive by checking condition as well
