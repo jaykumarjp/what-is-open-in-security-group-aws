@@ -19,7 +19,7 @@ try:
     for sg in response['SecurityGroups']:
         openport = []
         risk = []
-        ec2instance []
+        ec2instance=[]
         myarray.append([sg['GroupName'],sg['GroupId']])
         sg = sg['GroupId']
         try:
@@ -32,7 +32,9 @@ try:
                             risk.append(public['FromPort'])
                    # print(openport)
                     except:
-                        openport.append(public['IpProtocol'])             
+                        openport.append(public['IpProtocol']) 
+                        if "-1" in str(public['IpProtocol']):
+                            risk.append(public['IpProtocol'])
         except ClientError as e:
             print(e)
         #list ec2 and their sg(id), match with sg, if matched add to ec2 array
