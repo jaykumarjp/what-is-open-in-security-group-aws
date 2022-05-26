@@ -1,9 +1,9 @@
 # what-is-open-in-security-group-aws:
 Here are the main characteristics:
-*List all security groups in aws account.
-*Find attached instances in that security group.
-*Find public open ports in related security group.
-*Get highlighted list of dangereous open ports to public.
+* List all security groups in aws account.
+* Find attached instances in that security group.
+* Find public open ports in related security group.
+* Get highlighted list of dangereous open ports to public.
 
 # prerequisite:
 1. python
